@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaber Outpost METEO-LOG</title>
+  <link rel="icon" href="Wooden_Axe.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div class="time">
+      <header>METEO-LOG - Gaber Research Outpost, Krabi</header>
+      <div class="local">Current Local Time:</div>
+      <div class="local-time js-local-time">ERROR</div>
+      <div class="gmt">GMT: <span class="gmt-time js-gmt-time">ERROR</span></div>
+    </div>
+    <div class="other-data">
+      <div class="weather">
+        <div class="weather-title">Weather in Krabi, THA</div>
+        <div class="weather-showing-block">
+          <div class="js-weather-image weather-image">
+            <img src="01d@2x.png">
+          </div>
+          <div class="weather-temperatures">
+            <div class="weather-real-temperature">
+              <div class="temperature js-temperature">--</div>
+              <div class="celsius">C</div>
+            </div>
+            <div class="weather-feels-like-temp js-weather-feels-like-temp">Feels like --°</div>
+          </div>
+        </div>
+        <div class="js-weather-details weather-details">
+          <div class="js-description description">Weather: N/A</div>
+          <div class="high-low">
+            <div class="js-high high">H --°</div>
+            <div class="comma">,</div>
+            <div class="js-low low">L --°</div>
+          </div>
+          <div class="js-humidity">Humidity: --%</div>
+          <div class="js-prec">Precipitation: --%</div>
+          <div class="js-wind">Wind: -, -km/h</div>
+          <div class="js-visibility vis">Visibility: - km</div>
+          <div class="js-sun sun">Sunrise/Sunset: --:--/--:--</div>
+        </div>
+      </div>
+      <div class="data-and-report">
+        <div class="system-data">
+          <div class="data-title">System Data:</div>
+          <div class="GPS">GPS: 8.092361, 98.912101</div>
+          <div class="js-unix">GPS Time ERROR</div>
+          <div class="js-moon-phase">Moon Phase:</div>
+        </div>
+        <div class="missions">
+          <div class="js-mission-title mission-title">Missions left:</div>
+          <div class="add-mission">
+            <input placeholder="Add a mission" id="js-mission-name" class="mission-input">
+            <button class="add-button" onclick=addMission()>Add</button>
+          </div>
+          <div class="js-missions-list missions-list"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>     
+</html>
