@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #36454f;
+  background-color: rgb(0, 54, 90);
 }
 
 main {
@@ -223,4 +223,5 @@ header {
   border: none;
   border-radius: 5px;
   margin-left: 5px;
+
 }
