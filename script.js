@@ -179,7 +179,7 @@ function updateClock() {
   }
 
   // first waxing - 1 of the year
-  const firstWax = -41;
+  const firstWax = -12;
 
   const phaseModulo = dayOfYear - firstWax;
 
@@ -493,4 +493,5 @@ if (missionInput) {
 function saveMissionsToLocalStorage() {
   const missionsListJson = JSON.stringify(missionsList);
   localStorage.setItem("missions", missionsListJson);
+
 }
